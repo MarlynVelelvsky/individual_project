@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
 
+@media (max-width: 768px) {
+    .info-panel{
+        width: 100%;
+    }
+    .main-content, .sidebar{
+        width: 100%;
+    }
+
+}
+
 body{
     display: flex;
     margin: 0;
@@ -13,6 +23,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+
 }
 
 .top-panel{
@@ -20,30 +31,45 @@ body{
     display: flex;
     flex-direction: column;
     font-family: 'Geist', sans-serif;
+    margin-left: 30px;
+
     
 }
 
 .name-panel{
     font-weight: 700;
     font-size: 32px;
-    margin-left: 30px;
 
 
 }
 
-.list-panel{
-    margin-left: 10px;
-
-}
 
 .list-panel > ul > li > a{
     text-decoration: none;
 }
 
+.list-panel ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list-panel li {
+    margin: 10px 0;
+}
+
 .main-content{
     background-color: rgb(200, 140, 205);
     width: 65%;
+    padding: 20px;
+    font-size: 20px;
+    line-height: 1.6;
     
+}
+
+.main-content, .sidebar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .sidebar{
@@ -54,7 +80,19 @@ body{
 
 .cat-img > img{
     width: 45%;
-    border-radius: 45px;
+    border-radius: 50%;
     margin-left: 30px;
 
+}
+
+.bottom-panel a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.bottom-panel a:hover {
+    text-decoration: underline;
 }
