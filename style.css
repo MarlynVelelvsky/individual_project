@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Geist:wght@100..900&family=Lunasima:wght@400;700&family=Metal&display=swap');
+
+
+
+
+/*...... @media ......*/
+
 @media (max-width: 768px) {
     .info-panel{
         width: 100%;
@@ -9,6 +15,28 @@
 
 }
 
+
+
+
+@media (min-width: 768px){
+
+}
+
+
+/*
+@media (min-width: 992px){
+    
+}
+
+@media (min-width: 1200px){
+    
+}
+*/
+/*...... @media end ......*/
+
+
+
+
 body{
     display: flex;
     margin: 0;
@@ -17,10 +45,12 @@ body{
 
 }
 
+
+/*...... info-panel ......*/
+
 .info-panel{
     background:#9ea4ff;
     width: 30%;
-    height: 700px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -57,6 +87,33 @@ body{
 .list-panel li {
     margin: 10px 0;
 }
+
+.cat-img > img{
+    width: 45%;
+    border-radius: 50%;
+    margin-left: 30px;
+
+}
+
+.bottom-panel a {
+    
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.bottom-panel a:hover {
+    text-decoration: underline;
+}
+
+.bottom-panel{
+    display: flex;
+    margin: 10%;
+}
+
+
+/*...... main ......*/
+
 
 main{
     background: rgb(240,39,94);
@@ -96,6 +153,10 @@ main > header{
 
 }
 
+
+/*...... sidebar ......*/
+
+
 .sidebar{
     display: flex;
     justify-content: center;
@@ -105,25 +166,6 @@ main > header{
     background: linear-gradient(320deg, rgba(240,39,94,1) 15%, rgba(255,132,205,1) 35%, rgba(20,157,227,1) 75%, rgba(15,97,244,1) 92%);
 }
 
-.cat-img > img{
-    width: 45%;
-    border-radius: 50%;
-    margin-left: 30px;
 
-}
 
-.bottom-panel a {
-    
-    color: #000;
-    text-decoration: none;
-    font-weight: bold;
-}
 
-.bottom-panel a:hover {
-    text-decoration: underline;
-}
-
-.bottom-panel{
-    display: flex;
-    margin: 10%;
-}
