@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Geist:wght@100..900&family=Lunasima:wght@400;700&family=Metal&display=swap');
 @media (max-width: 768px) {
     .info-panel{
         width: 100%;
@@ -13,7 +12,8 @@
 body{
     display: flex;
     margin: 0;
-    font-family: 'Geist', sans-serif;
+    font-family: "Lunasima", serif;
+
 
 }
 
@@ -32,14 +32,14 @@ body{
     height: 65%;
     display: flex;
     flex-direction: column;
-    margin-left: 30px;
+    margin-left: 10%;
 
     
 }
 
 .name-panel{
     font-weight: 700;
-    font-size: 32px;
+    font-size: 2em;
 
 
 }
@@ -72,7 +72,7 @@ main{
 
 main > header{
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1.05em;
     align-self: flex-start;
 
 }
@@ -82,12 +82,17 @@ main > header{
     height: auto;
     max-width: 500px;
     aspect-ratio: 1 / 1.6 ;
+    border-radius:100% 100% 0% 100% / 0% 100% 0% 100% ;
 
 }
 
-.content{
+.content, .content-mirror{
     display: flex;
+    margin: 3%;
+}
 
+.content-mirror{
+    flex-direction: row-reverse;
 
 }
 
@@ -108,8 +113,7 @@ main > header{
 }
 
 .bottom-panel a {
-    display: inline-block;
-    margin-right: 10px;
+    
     color: #000;
     text-decoration: none;
     font-weight: bold;
@@ -119,8 +123,7 @@ main > header{
     text-decoration: underline;
 }
 
-footer{
-    margin-left: 30px;
-
-
+.bottom-panel{
+    display: flex;
+    margin: 10%;
 }
