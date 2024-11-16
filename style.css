@@ -3,36 +3,7 @@
 
 
 
-/*...... @media ......*/
 
-@media (max-width: 768px) {
-    .info-panel{
-        width: 100%;
-    }
-    .main-content, .sidebar{
-        width: 100%;
-    }
-
-}
-
-
-
-
-@media (min-width: 768px){
-
-}
-
-
-/*
-@media (min-width: 992px){
-    
-}
-
-@media (min-width: 1200px){
-    
-}
-*/
-/*...... @media end ......*/
 
 
 
@@ -59,7 +30,6 @@ body{
 }
 
 .top-panel{
-    height: 65%;
     display: flex;
     flex-direction: column;
     margin-left: 10%;
@@ -91,7 +61,6 @@ body{
 .cat-img > img{
     width: 45%;
     border-radius: 50%;
-    margin-left: 30px;
 
 }
 
@@ -119,8 +88,7 @@ main{
     background: rgb(240,39,94);
     background: linear-gradient(155deg, rgba(240,39,94,1) 15%, rgba(255,132,205,1) 35%, rgba(20,157,227,1) 75%, rgba(15,97,244,1) 92%);
     width: 65%;
-    padding: 20px;
-    font-size: 20px;
+    font-size: 1.05em;
     line-height: 1.6;
     display: flex;
     flex-direction: column;
@@ -167,5 +135,49 @@ main > header{
 }
 
 
+/*...... @media ......*/
 
+@media (max-width: 768px) {
+    body{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
+
+
+    .info-panel{
+        height: 25vh;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .name-panel{
+        font-size: 1em;
+
+    }
+
+    .cat-img > img{
+        width: 25%;
+        border-radius: 50%;
+    
+    }
+
+    .info-panel, main, .sidebar{
+        width: 100%;
+    } 
+
+}
+
+
+/*
+@media (min-width: 992px){
+    
+}
+
+@media (min-width: 1200px){
+    
+}
+*/
+/*...... @media end ......*/
 
