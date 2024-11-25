@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Geist:wght@100..900&family=Lunasima:wght@400;700&family=Metal&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    margin: 0;
+    font-family: "Lunasima", serif;
+    flex-direction: column;
+    height: 695px;
+}
+
+/*...... main ......*/
+
+main{
+    background: rgb(240,39,94);
+    background: linear-gradient(155deg, rgba(240,39,94,1) 15%, rgba(255,132,205,1) 35%, rgba(20,157,227,1) 75%, rgba(15,97,244,1) 92%);
+    width: 100%;
+    font-size: 1.5em;
+    line-height: 1.6;
+    display: flex;
+    height: 60%;
+}
+
+main p{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+header, footer{
+    width: 100%;
+    justify-content: center;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    background-color: #9ea4ff;
+}
+
+header a{
+    text-decoration: none;
+    padding: 0;
+    font-size: 1.5em;
+}
+
+footer a{
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*...... @media ......*/
+
+@media (max-width: 768px) {
+    body{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    main{
+        width: 100%;
+    } 
+}
+
+/*
+@media (min-width: 992px){
+    
+}
+
+@media (min-width: 1200px){
+    
+}
+*/
+/*...... @media end ......*/
