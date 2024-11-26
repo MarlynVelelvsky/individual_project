@@ -116,6 +116,19 @@ main{
     flex-direction: row-reverse;
 }
 
+.learn-more{
+    list-style-type: none;
+    font-size: 1em;
+    padding: 1em 2em 1em 0.5em;
+    border: transparent;
+    background: rgba(255,132,205,1);
+    border-radius: 9px;
+    display: flex;
+    width: 30%;
+    text-decoration: none;
+    color: #000;
+}
+
 .comment{
     width: 100%;
     height: 200px;
