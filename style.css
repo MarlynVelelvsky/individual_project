@@ -36,18 +36,27 @@ body{
     margin: 10%;
 }
 
-.list-panel > ul > li > a{
-    text-decoration: none;
+.list-panel > ul{
+    list-style-type: none;
     color: #000;
 }
 
-.list-panel > ul > li{
-    list-style-type: none;
+.list-panel > ul > li > button{
     font-size: 1.3em;
     padding: 1em 2em 1em 0.5em;
-    border: transparent;
+    border: none;
     background: rgba(20,157,227,1);
     border-radius: 9px;
+    display: flex;
+    color: #000;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: backround-color 0.3s ease, transform 0.2s;
+}
+
+.list-panel > ul > li > button:hover{
+    background-color: rgba(15,97,244,1);
+    transform: translateY(-1px);
 }
 
 .list-panel li {
@@ -117,16 +126,23 @@ main{
 }
 
 .learn-more{
-    list-style-type: none;
     font-size: 1em;
-    padding: 1em 2em 1em 0.5em;
-    border: transparent;
+    padding: 1em 2em;
+    border: none;
     background: rgba(255,132,205,1);
     border-radius: 9px;
     display: flex;
-    width: 30%;
+    text-align: center;
     text-decoration: none;
     color: #000;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: backround-color 0.3s ease, transform 0.2s;
+}
+
+.learn-more:hover{
+    background-color: rgba(240,39,94,1);
+    transform: translateY(-1px);
 }
 
 .comment{
@@ -158,17 +174,19 @@ main{
 .comment button{
     font-size: 17px;
     padding: 0.5em 2em;
-    border: transparent;
+    border: none;
     box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
     background: rgba(255,132,205,1);
     color: white;
     border-radius: 4px;
+    transition: backround-color 0.3s ease, transform 0.2s;
+
 
 }
 
 .comment button:hover {
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(255,132,205,1) 0%, rgba(20,157,227,1) 100%);
+    background-color: rgba(15,97,244,1);
+    transform: translateY(-1px);
 }
 
 .comment button:active {
@@ -228,26 +246,15 @@ main{
         height: 60px;
     }
 
-    .list-panel ul{
+
+    .list-panel > ul > li > button{
+        font-size: 1.2em;
+    }
+
+    .list-panel > ul{
         display: flex;
         flex-direction: column;
-        align-items: center;
-        width: 100%;
-        padding: 0;
-        font-size: 1.5em;
-        gap: 15px;
     }
-
-    .list-panel > ul > li{
-        list-style-type: none;
-        font-size: 1em;
-        padding: 0.5em 1em 0.5em 0.25em;
-        border: transparent;
-        border-radius: 7px;
-    }
-
-
-
 
     .bottom-panel {
         display: flex;
@@ -257,8 +264,6 @@ main{
         font-size: 1.5em;
 
     }
-
-
 
     .info-panel, main, .sidebar{
         width: 100%;
