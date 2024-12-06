@@ -4,20 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style_1.css">
+    <link rel="stylesheet" href="style_2.css">
 </head>
 <body>
 
     <header><button onclick="window.location.href='index.html'">Home</button></header>
     <main>
-        <p>
-            I am Marlyn. I come from Ukraine, and now I live in Germany.
-I am learning English and German.
-I am also learning backend development, and I want to become a web developer or app developer.
+        <div class="content">
+            <div class="cover"> <img src="images/the_book.jpg" alt="book"></div>
+            <div class="post">
+                <div class="title">Title</div>
+                <div class="post-post">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae vel sequi sint repellat est dignissimos id error tenetur consequatur aut, ab a quam nostrum quisquam dolores molestias voluptates explicabo numquam pariatur similique saepe! Fugiat magni hic, ducimus molestiae tempora natus.
+        </div>
 
-Reading books is my hobby, which is why I write this blog.
-That's all for now. Thank you for your attention!
-        </p>
+        <div class="comment-container">
+            <button id="toggle-comments">Comment</button>
+            <div class="comment">
+                <textarea id="comment-box" placeholder="Write your comment"></textarea>
+                <button id="add-comment">Add Comment</button>
+                <div id="comments-section"></div>
+                <script src="script.js"></script>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="network"><a href="#">Instagram</a>
@@ -25,4 +34,4 @@ That's all for now. Thank you for your attention!
         </div>
     </footer>
 </body>
-</html>
+</html> 

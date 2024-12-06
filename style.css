@@ -145,53 +145,7 @@ main{
     transform: translateY(-1px);
 }
 
-.comment{
-    width: 100%;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;}
 
-#comment-box, #add-comment{
-    margin: 3%;
-}
-    
-#comment-box{
-     
-    width: 500px;
-    height: 180px;
-    resize: none;
-    border-radius: 28px;
-    border: 0;
-    outline: auto rgba(255,132,205,1);
-    padding-inline: 15px;
-    padding-top: 10px;
-    border-color: #9ea4ff ;
-
-   
-}
-
-.comment button{
-    font-size: 17px;
-    padding: 0.5em 2em;
-    border: none;
-    box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
-    background: rgba(255,132,205,1);
-    color: white;
-    border-radius: 4px;
-    transition: backround-color 0.3s ease, transform 0.2s;
-
-
-}
-
-.comment button:hover {
-    background-color: rgba(15,97,244,1);
-    transform: translateY(-1px);
-}
-
-.comment button:active {
-    transform: translate(0em, 0.2em);
-}
 
 
 /*...... sidebar ......*/
